@@ -1,0 +1,709 @@
+
+(base) C:\Users\mwise>
+(base) C:\Users\mwise>
+(base) C:\Users\mwise>dir
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+
+ Directory of C:\Users\mwise
+
+2018-03-06  11:20    <DIR>          .
+2018-03-06  11:20    <DIR>          ..
+2017-11-30  17:11            37,732 .adalcache
+2018-01-30  02:02                57 .bash_history
+2017-12-06  01:40    <DIR>          .conda
+2018-01-29  22:45    <DIR>          .config
+2017-11-30  17:11             3,671 .devaccounts
+2017-12-25  13:51    <DIR>          .docker
+2018-01-22  01:54    <DIR>          .dotnet
+2017-11-30  17:10                 0 .extaccounts
+2018-02-16  14:51               157 .gitconfig
+2018-01-25  17:32    <DIR>          .ipython
+2018-01-28  07:59    <DIR>          .jupyter
+2017-12-06  02:54    <DIR>          .keras
+2018-02-07  11:43    <DIR>          .matplotlib
+2018-01-30  03:47             3,483 .octave_hist
+2018-02-07  11:42    <DIR>          .spyder
+2018-02-07  11:40    <DIR>          .spyder-py3
+2017-12-09  00:14    <DIR>          .vs
+2017-12-06  23:48    <DIR>          .vscode
+2018-02-28  16:04    <DIR>          3D Objects
+2018-02-28  16:04    <DIR>          Contacts
+2018-01-28  18:21    <DIR>          Creative Cloud Files
+2018-03-30  12:42    <DIR>          Desktop
+2018-03-29  09:22    <DIR>          Documents
+2018-03-30  12:42    <DIR>          Downloads
+2018-02-28  16:04    <DIR>          Favorites
+2018-03-08  23:46    <DIR>          Links
+2018-02-28  16:04    <DIR>          Music
+2018-03-29  07:31    <DIR>          OneDrive
+2018-02-28  16:04    <DIR>          Pictures
+2018-02-28  16:04    <DIR>          Saved Games
+2018-02-01  05:20    <DIR>          scikit_learn_data
+2018-02-28  16:04    <DIR>          Searches
+2017-12-01  15:31    <DIR>          source
+2018-02-28  16:04    <DIR>          Videos
+               6 File(s)         45,100 bytes
+              30 Dir(s)  44,963,110,912 bytes free
+
+(base) C:\Users\mwise>conda list env
+# packages in environment at C:\Users\mwise\AppData\Local\Continuum\anaconda3:
+#
+conda-env                 2.6.0                h36134e3_1
+
+(base) C:\Users\mwise>conda env list
+# conda environments:
+#
+base                  *  C:\Users\mwise\AppData\Local\Continuum\anaconda3
+MNE                      C:\Users\mwise\AppData\Local\Continuum\anaconda3\envs\MNE
+py27                     C:\Users\mwise\AppData\Local\Continuum\anaconda3\envs\py27
+tensorflow               C:\Users\mwise\AppData\Local\Continuum\anaconda3\envs\tensorflow
+
+
+(base) C:\Users\mwise>conda py27
+
+CommandNotFoundError: No command 'conda py27'.
+
+
+(base) C:\Users\mwise>activate tensorflow
+
+(tensorflow) C:\Users\mwise>pip upgrade tensroflow
+ERROR: unknown command "upgrade"
+
+(tensorflow) C:\Users\mwise>pip install tensroflow --upgrade
+Collecting tensroflow
+  Could not find a version that satisfies the requirement tensroflow (from versions: )
+No matching distribution found for tensroflow
+You are using pip version 9.0.1, however version 9.0.3 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+(tensorflow) C:\Users\mwise>python
+Python 3.6.3 |Anaconda, Inc.| (default, Nov  8 2017, 15:10:56) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit
+Use exit() or Ctrl-Z plus Return to exit
+>>> exit()
+
+(tensorflow) C:\Users\mwise>python
+Python 3.6.3 |Anaconda, Inc.| (default, Nov  8 2017, 15:10:56) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tensorflow as tf
+>>> print(tf.__version__)
+1.5.0
+>>> exit
+Use exit() or Ctrl-Z plus Return to exit
+>>> exit
+Use exit() or Ctrl-Z plus Return to exit
+>>> exit()
+
+(tensorflow) C:\Users\mwise>python
+Python 3.6.3 |Anaconda, Inc.| (default, Nov  8 2017, 15:10:56) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tensorflow as tf
+>>> sess = tf.Session()
+2018-03-30 13:06:04.898494: I C:\tf_jenkins\workspace\rel-win\M\windows\PY\36\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+>>> hello = tf.constant("hello")
+>>> sess.run(hello)
+b'hello'
+>>> a = tv.constant(10)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'tv' is not defined
+>>> a = tf.constant(10)
+>>> b = tf.constant(32)
+>>> sess.run(a+b)
+42
+>>> sess.close()
+>>> from __future__ import absolute_import
+>>> quit()
+
+(tensorflow) C:\Users\mwise>l
+'l' is not recognized as an internal or external command,
+operable program or batch file.
+
+(tensorflow) C:\Users\mwise>
+(tensorflow) C:\Users\mwise>
+(tensorflow) C:\Users\mwise>cd ..
+
+(tensorflow) C:\Users>cd ..
+
+(tensorflow) C:\>cd tutorials
+
+(tensorflow) C:\tutorials>dir
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+
+ Directory of C:\tutorials
+
+2018-03-30  16:55    <DIR>          .
+2018-03-30  16:55    <DIR>          ..
+2018-03-30  13:49         3,000,738 1511.07122.pdf
+2018-03-30  13:50         1,128,265 1512.09194 (1).pdf
+2018-03-30  13:49         1,128,265 1512.09194.pdf
+2018-03-30  13:48           141,825 Dilated Convolutions and Kronecker Factored Convolutions.html
+2018-03-30  13:48    <DIR>          Dilated Convolutions and Kronecker Factored Convolutions_files
+2018-03-30  12:58    <DIR>          tensorflow
+2018-03-30  16:55         2,802,348 tf.layers.conv2d  _  TensorFlow.html
+2018-03-30  16:55    <DIR>          tf.layers.conv2d  _  TensorFlow_files
+               5 File(s)      8,201,441 bytes
+               5 Dir(s)  44,691,513,344 bytes free
+
+(tensorflow) C:\tutorials>cd ..
+
+(tensorflow) C:\>cd transfer
+
+(tensorflow) C:\transfer>dir
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+
+ Directory of C:\transfer
+
+2018-03-30  11:44    <DIR>          .
+2018-03-30  11:44    <DIR>          ..
+2018-02-01  07:50    <DIR>          ageron
+2018-02-19  19:40    <DIR>          audi
+2018-03-30  11:31    <DIR>          CapsNet-Tensorflow
+2018-03-30  11:31    <DIR>          capsule-networks_1
+2018-03-30  11:44    <DIR>          capsule_networks
+2018-03-30  11:36    <DIR>          cnn-mnist
+2018-01-30  02:42    <DIR>          Cuda
+2018-01-31  20:07    <DIR>          ffmpeg-20180130-fe1e6c0-win64-static
+2018-02-01  07:21    <DIR>          handson-ml
+2018-01-30  00:47    <DIR>          hintonrbm
+2018-01-26  00:05    <DIR>          Microsoft Enterprise Symbols
+2017-12-16  05:54    <DIR>          MixedRealityToolkit-Unity
+2018-02-12  11:10    <DIR>          MNE
+2018-01-31  20:18    <DIR>          MNEPython
+2018-02-12  11:11    <DIR>          models
+2017-12-25  14:37    <DIR>          notebooks
+2017-12-13  01:09    <DIR>          Pdata
+2017-12-13  05:24    <DIR>          Repsol
+2018-03-30  11:43    <DIR>          tftuts
+2018-03-28  20:42    <DIR>          vafsb
+               0 File(s)              0 bytes
+              22 Dir(s)  44,691,513,344 bytes free
+
+(tensorflow) C:\transfer>cd tftuts
+
+(tensorflow) C:\transfer\tftuts>dir
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+
+ Directory of C:\transfer\tftuts
+
+2018-03-30  11:43    <DIR>          .
+2018-03-30  11:43    <DIR>          ..
+2018-03-30  11:37           152,297 A Guide to TF Layers_ Building a Convolutional Neural Network  _  TensorFlow.html
+2018-03-30  11:37    <DIR>          A Guide to TF Layers_ Building a Convolutional Neural Network  _  TensorFlow_files
+2018-03-30  11:39            99,083 Convolutional Neural Networks  _  TensorFlow.html
+2018-03-30  11:39    <DIR>          Convolutional Neural Networks  _  TensorFlow_files
+2018-03-30  11:38            96,650 How to Retrain Inception's Final Layer for New Categories  _  TensorFlow.html
+2018-03-30  11:38    <DIR>          How to Retrain Inception's Final Layer for New Categories  _  TensorFlow_files
+2018-03-30  11:39           127,515 Image Recognition  _  TensorFlow.html
+2018-03-30  11:39    <DIR>          Image Recognition  _  TensorFlow_files
+2018-03-30  11:42            60,394 Neural Machine Translation (seq2seq) Tutorial  _  TensorFlow.html
+2018-03-30  11:42    <DIR>          Neural Machine Translation (seq2seq) Tutorial  _  TensorFlow_files
+2018-03-30  11:42           119,852 Recurrent Neural Networks for Drawing Classification  _  TensorFlow.html
+2018-03-30  11:42    <DIR>          Recurrent Neural Networks for Drawing Classification  _  TensorFlow_files
+2018-03-30  11:42           105,819 Recurrent Neural Networks  _  TensorFlow.html
+2018-03-30  11:42    <DIR>          Recurrent Neural Networks  _  TensorFlow_files
+2018-03-30  11:43           122,612 Simple Audio Recognition  _  TensorFlow.html
+2018-03-30  11:43    <DIR>          Simple Audio Recognition  _  TensorFlow_files
+2018-03-30  11:41            60,017 Tutorials  _  TensorFlow.html
+2018-03-30  11:41    <DIR>          Tutorials  _  TensorFlow_files
+               9 File(s)        944,239 bytes
+              11 Dir(s)  44,691,505,152 bytes free
+
+(tensorflow) C:\transfer\tftuts>cd ..
+
+(tensorflow) C:\transfer>dir
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+
+ Directory of C:\transfer
+
+2018-03-30  11:44    <DIR>          .
+2018-03-30  11:44    <DIR>          ..
+2018-02-01  07:50    <DIR>          ageron
+2018-02-19  19:40    <DIR>          audi
+2018-03-30  11:31    <DIR>          CapsNet-Tensorflow
+2018-03-30  11:31    <DIR>          capsule-networks_1
+2018-03-30  11:44    <DIR>          capsule_networks
+2018-03-30  11:36    <DIR>          cnn-mnist
+2018-01-30  02:42    <DIR>          Cuda
+2018-01-31  20:07    <DIR>          ffmpeg-20180130-fe1e6c0-win64-static
+2018-02-01  07:21    <DIR>          handson-ml
+2018-01-30  00:47    <DIR>          hintonrbm
+2018-01-26  00:05    <DIR>          Microsoft Enterprise Symbols
+2017-12-16  05:54    <DIR>          MixedRealityToolkit-Unity
+2018-02-12  11:10    <DIR>          MNE
+2018-01-31  20:18    <DIR>          MNEPython
+2018-02-12  11:11    <DIR>          models
+2017-12-25  14:37    <DIR>          notebooks
+2017-12-13  01:09    <DIR>          Pdata
+2017-12-13  05:24    <DIR>          Repsol
+2018-03-30  11:43    <DIR>          tftuts
+2018-03-28  20:42    <DIR>          vafsb
+               0 File(s)              0 bytes
+              22 Dir(s)  44,691,505,152 bytes free
+
+(tensorflow) C:\transfer>cd ..
+
+(tensorflow) C:\>cd tutorials
+
+(tensorflow) C:\tutorials>dir
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+
+ Directory of C:\tutorials
+
+2018-03-30  19:12    <DIR>          .
+2018-03-30  19:12    <DIR>          ..
+2018-03-30  11:31    <DIR>          CapsNet-Tensorflow
+2018-03-30  11:31    <DIR>          capsule-networks_1
+2018-03-30  11:44    <DIR>          capsule_networks
+2018-03-30  11:36    <DIR>          cnn-mnist
+2018-03-30  19:12    <DIR>          Dilated Convolutions
+2018-03-30  12:58    <DIR>          tensorflow
+2018-03-30  16:55         2,802,348 tf.layers.conv2d  _  TensorFlow.html
+2018-03-30  16:55    <DIR>          tf.layers.conv2d  _  TensorFlow_files
+               1 File(s)      2,802,348 bytes
+               9 Dir(s)  44,683,943,936 bytes free
+
+(tensorflow) C:\tutorials>cd cnn-mnist
+
+(tensorflow) C:\tutorials\cnn-mnist>dir
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+
+ Directory of C:\tutorials\cnn-mnist
+
+2018-03-30  11:36    <DIR>          .
+2018-03-30  11:36    <DIR>          ..
+2018-03-30  11:52             5,276 main.py
+2018-03-30  11:36    <DIR>          mnist_data
+2018-03-30  11:36             8,945 mnist_data.py
+2018-03-30  11:36             2,273 model.py
+2018-03-30  11:36               891 README.md
+               4 File(s)         17,385 bytes
+               3 Dir(s)  44,683,943,936 bytes free
+
+(tensorflow) C:\tutorials\cnn-mnist>code README.md
+
+(tensorflow) C:\tutorials\cnn-mnist>cd
+C:\tutorials\cnn-mnist
+
+(tensorflow) C:\tutorials\cnn-mnist>
+(tensorflow) C:\tutorials\cnn-mnist>cd ..
+
+(tensorflow) C:\tutorials>dir *.gz /s
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+File Not Found
+
+(tensorflow) C:\tutorials>cd ..
+
+(tensorflow) C:\>cd transfer
+
+(tensorflow) C:\transfer>dir *.gz /s
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+
+ Directory of C:\transfer\MNE\models\research\syntaxnet\dragnn\viz
+
+2018-01-31  19:54           133,415 viz.min.js.gz
+               1 File(s)        133,415 bytes
+
+ Directory of C:\transfer\MNE\models\syntaxnet\dragnn\viz
+
+2017-05-22  15:53           133,415 viz.min.js.gz
+               1 File(s)        133,415 bytes
+
+ Directory of C:\transfer\models\syntaxnet\dragnn\viz
+
+2017-05-22  15:53           133,415 viz.min.js.gz
+               1 File(s)        133,415 bytes
+
+     Total Files Listed:
+               3 File(s)        400,245 bytes
+               0 Dir(s)  44,683,939,840 bytes free
+
+(tensorflow) C:\transfer>cd ..
+
+(tensorflow) C:\>dir
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+
+ Directory of C:\
+
+2018-01-26  02:26    <DIR>          Install
+2017-11-15  02:30    <DIR>          Intel
+2018-03-29  09:28    <DIR>          markdowndocs
+2006-12-02  09:37           904,704 msdia80.dll
+2018-03-06  11:22    <DIR>          MSOTraceLite
+2018-01-29  22:41    <DIR>          Octave
+2017-12-25  13:38    <DIR>          PerfLogs
+2018-01-23  21:22    <DIR>          Program Files
+2018-03-29  08:53    <DIR>          Program Files (x86)
+2018-01-21  02:53    <DIR>          R-Experiments
+2017-12-06  21:18    <DIR>          tensorflow
+2018-01-23  22:54    <DIR>          tinkerpop
+2018-02-01  07:16    <DIR>          tmp
+2018-03-30  19:11    <DIR>          transfer
+2018-03-30  19:12    <DIR>          tutorials
+2017-12-16  05:56    <DIR>          Unity
+2017-12-09  13:04    <DIR>          Users
+2018-02-08  11:51    <DIR>          ut
+2018-02-08  11:30    <DIR>          vsts
+2018-03-29  21:23    <DIR>          Windows
+               1 File(s)        904,704 bytes
+              19 Dir(s)  44,683,927,552 bytes free
+
+(tensorflow) C:\>cd tensorflow
+
+(tensorflow) C:\tensorflow>dir *.gz /s
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+File Not Found
+
+(tensorflow) C:\tensorflow>cd ..
+
+(tensorflow) C:\>cd tutorials
+
+(tensorflow) C:\tutorials>dir
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+
+ Directory of C:\tutorials
+
+2018-03-30  19:12    <DIR>          .
+2018-03-30  19:12    <DIR>          ..
+2018-03-30  11:31    <DIR>          CapsNet-Tensorflow
+2018-03-30  11:31    <DIR>          capsule-networks_1
+2018-03-30  11:44    <DIR>          capsule_networks
+2018-03-30  11:36    <DIR>          cnn-mnist
+2018-03-30  19:12    <DIR>          Dilated Convolutions
+2018-03-30  12:58    <DIR>          tensorflow
+2018-03-30  16:55         2,802,348 tf.layers.conv2d  _  TensorFlow.html
+2018-03-30  16:55    <DIR>          tf.layers.conv2d  _  TensorFlow_files
+               1 File(s)      2,802,348 bytes
+               9 Dir(s)  44,682,100,736 bytes free
+
+(tensorflow) C:\tutorials>cd cnn-mnist
+
+(tensorflow) C:\tutorials\cnn-mnist>python main.py
+Traceback (most recent call last):
+  File "main.py", line 15, in <module>
+    import mnist_data
+  File "C:\tutorials\cnn-mnist\mnist_data.py", line 18, in <module>
+    from tensorflow.contrib.learn.python.learn.datasets import base
+  File "C:\Users\mwise\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\site-packages\tensorflow\contrib\__init__.py", line 22, in <module>
+    from tensorflow.contrib import bayesflow
+  File "C:\Users\mwise\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\site-packages\tensorflow\contrib\bayesflow\__init__.py", line 31, in <module>
+    from tensorflow.contrib.bayesflow.python.ops import optimizers
+  File "C:\Users\mwise\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\site-packages\tensorflow\contrib\bayesflow\python\ops\optimizers.py", line 26, in <module>
+    from tensorflow.contrib.bayesflow.python.ops.sgld_optimizer import *
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 951, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 894, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1157, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1129, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1268, in find_spec
+KeyboardInterrupt
+
+(tensorflow) C:\tutorials\cnn-mnist>python main.py
+input args:
+ {
+    "data_dir":"mnist_data/",
+    "ckpt_dir":"ckpts/",
+    "load_params":false,
+    "output":"prediction.csv",
+    "epochs":30,
+    "batch_size":50,
+    "val_size":5000
+}
+Successfully downloaded train-images-idx3-ubyte.gz 44888 bytes.
+Extracting mnist_data/train-images-idx3-ubyte.gz
+Traceback (most recent call last):
+  File "main.py", line 122, in <module>
+    data = mnist_data.read_data_sets(args.data_dir, one_hot=True, reshape=False, validation_size=args.val_size)
+  File "C:\tutorials\cnn-mnist\mnist_data.py", line 227, in read_data_sets
+    train_images = extract_images(f)
+  File "C:\tutorials\cnn-mnist\mnist_data.py", line 47, in extract_images
+    magic = _read32(bytestream)
+  File "C:\tutorials\cnn-mnist\mnist_data.py", line 29, in _read32
+    return numpy.frombuffer(bytestream.read(4), dtype=dt)[0]
+  File "C:\Users\mwise\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\gzip.py", line 276, in read
+    return self._buffer.read(size)
+  File "C:\Users\mwise\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\_compression.py", line 68, in readinto
+    data = self.read(len(byte_view))
+  File "C:\Users\mwise\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\gzip.py", line 463, in read
+    if not self._read_gzip_header():
+  File "C:\Users\mwise\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\gzip.py", line 411, in _read_gzip_header
+    raise OSError('Not a gzipped file (%r)' % magic)
+OSError: Not a gzipped file (b'<!')
+
+(tensorflow) C:\tutorials\cnn-mnist>dir mnist_data
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+
+ Directory of C:\tutorials\cnn-mnist\mnist_data
+
+2018-03-30  19:18    <DIR>          .
+2018-03-30  19:18    <DIR>          ..
+2018-03-30  11:36         7,840,016 test-image
+2018-03-30  19:18            44,888 train-images-idx3-ubyte.gz
+               2 File(s)      7,884,904 bytes
+               2 Dir(s)  44,680,622,080 bytes free
+
+(tensorflow) C:\tutorials\cnn-mnist>python main.py
+input args:
+ {
+    "data_dir":"mnist_data/",
+    "ckpt_dir":"ckpts/",
+    "load_params":false,
+    "output":"prediction.csv",
+    "epochs":30,
+    "batch_size":50,
+    "val_size":5000
+}
+Extracting mnist_data/train-images-idx3-ubyte.gz
+Traceback (most recent call last):
+  File "main.py", line 122, in <module>
+    data = mnist_data.read_data_sets(args.data_dir, one_hot=True, reshape=False, validation_size=args.val_size)
+  File "C:\tutorials\cnn-mnist\mnist_data.py", line 227, in read_data_sets
+    train_images = extract_images(f)
+  File "C:\tutorials\cnn-mnist\mnist_data.py", line 47, in extract_images
+    magic = _read32(bytestream)
+  File "C:\tutorials\cnn-mnist\mnist_data.py", line 29, in _read32
+    return numpy.frombuffer(bytestream.read(4), dtype=dt)[0]
+  File "C:\Users\mwise\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\gzip.py", line 276, in read
+    return self._buffer.read(size)
+  File "C:\Users\mwise\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\_compression.py", line 68, in readinto
+    data = self.read(len(byte_view))
+  File "C:\Users\mwise\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\gzip.py", line 463, in read
+    if not self._read_gzip_header():
+  File "C:\Users\mwise\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\gzip.py", line 411, in _read_gzip_header
+    raise OSError('Not a gzipped file (%r)' % magic)
+OSError: Not a gzipped file (b'<!')
+
+(tensorflow) C:\tutorials\cnn-mnist>cd
+C:\tutorials\cnn-mnist
+
+(tensorflow) C:\tutorials\cnn-mnist>
+(tensorflow) C:\tutorials\cnn-mnist>cd ..
+
+(tensorflow) C:\tutorials>code cnn-mnist
+
+(tensorflow) C:\tutorials>dir cnn-mnist
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+
+ Directory of C:\tutorials\cnn-mnist
+
+2018-03-30  19:17    <DIR>          .
+2018-03-30  19:17    <DIR>          ..
+2018-03-30  11:52             5,276 main.py
+2018-03-30  19:18    <DIR>          mnist_data
+2018-03-30  11:36             8,945 mnist_data.py
+2018-03-30  11:36             2,273 model.py
+2018-03-30  11:36               891 README.md
+2018-03-30  19:18    <DIR>          __pycache__
+               4 File(s)         17,385 bytes
+               4 Dir(s)  44,680,425,472 bytes free
+
+(tensorflow) C:\tutorials>dir cnn-mnist
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+
+ Directory of C:\tutorials\cnn-mnist
+
+2018-03-30  19:17    <DIR>          .
+2018-03-30  19:17    <DIR>          ..
+2018-03-30  11:52             5,276 main.py
+2018-03-30  19:18    <DIR>          mnist_data
+2018-03-30  11:36             8,945 mnist_data.py
+2018-03-30  11:36             2,273 model.py
+2018-03-30  11:36               891 README.md
+2018-03-30  19:18    <DIR>          __pycache__
+               4 File(s)         17,385 bytes
+               4 Dir(s)  44,678,631,424 bytes free
+
+(tensorflow) C:\tutorials>dir
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+
+ Directory of C:\tutorials
+
+2018-03-30  19:12    <DIR>          .
+2018-03-30  19:12    <DIR>          ..
+2018-03-30  11:31    <DIR>          CapsNet-Tensorflow
+2018-03-30  11:31    <DIR>          capsule-networks_1
+2018-03-30  11:44    <DIR>          capsule_networks
+2018-03-30  19:17    <DIR>          cnn-mnist
+2018-03-30  19:12    <DIR>          Dilated Convolutions
+2018-03-30  12:58    <DIR>          tensorflow
+2018-03-30  16:55         2,802,348 tf.layers.conv2d  _  TensorFlow.html
+2018-03-30  16:55    <DIR>          tf.layers.conv2d  _  TensorFlow_files
+               1 File(s)      2,802,348 bytes
+               9 Dir(s)  44,686,897,152 bytes free
+
+(tensorflow) C:\tutorials>cd cnn-mnist
+
+(tensorflow) C:\tutorials\cnn-mnist>dir
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+
+ Directory of C:\tutorials\cnn-mnist
+
+2018-03-30  19:17    <DIR>          .
+2018-03-30  19:17    <DIR>          ..
+2018-03-30  11:52             5,276 main.py
+2018-03-30  19:18    <DIR>          mnist_data
+2018-03-30  11:36             8,945 mnist_data.py
+2018-03-30  11:36             2,273 model.py
+2018-03-30  11:36               891 README.md
+2018-03-30  19:18    <DIR>          __pycache__
+               4 File(s)         17,385 bytes
+               4 Dir(s)  44,686,893,056 bytes free
+
+(tensorflow) C:\tutorials\cnn-mnist>cd mnist_data
+
+(tensorflow) C:\tutorials\cnn-mnist\mnist_data>dir
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+
+ Directory of C:\tutorials\cnn-mnist\mnist_data
+
+2018-03-30  19:18    <DIR>          .
+2018-03-30  19:18    <DIR>          ..
+2018-03-30  11:36         7,840,016 test-image
+2018-03-30  19:18            44,888 train-images-idx3-ubyte.gz
+               2 File(s)      7,884,904 bytes
+               2 Dir(s)  44,686,893,056 bytes free
+
+(tensorflow) C:\tutorials\cnn-mnist\mnist_data>hxd
+'hxd' is not recognized as an internal or external command,
+operable program or batch file.
+
+(tensorflow) C:\tutorials\cnn-mnist\mnist_data>dir
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+
+ Directory of C:\tutorials\cnn-mnist\mnist_data
+
+2018-03-30  19:18    <DIR>          .
+2018-03-30  19:18    <DIR>          ..
+2018-03-30  11:36         7,840,016 test-image
+2018-03-30  19:18            44,888 train-images-idx3-ubyte.gz
+               2 File(s)      7,884,904 bytes
+               2 Dir(s)  44,686,888,960 bytes free
+
+(tensorflow) C:\tutorials\cnn-mnist\mnist_data>debug
+'debug' is not recognized as an internal or external command,
+operable program or batch file.
+
+(tensorflow) C:\tutorials\cnn-mnist\mnist_data>list
+'list' is not recognized as an internal or external command,
+operable program or batch file.
+
+(tensorflow) C:\tutorials\cnn-mnist\mnist_data>notedpad train-images-idx3-ubyte.gz
+'notedpad' is not recognized as an internal or external command,
+operable program or batch file.
+
+(tensorflow) C:\tutorials\cnn-mnist\mnist_data>notepad train-images-idx3-ubyte.gz
+
+(tensorflow) C:\tutorials\cnn-mnist\mnist_data>dir
+ Volume in drive C is OSDisk
+ Volume Serial Number is CCBC-5239
+
+ Directory of C:\tutorials\cnn-mnist\mnist_data
+
+2018-03-30  19:18    <DIR>          .
+2018-03-30  19:18    <DIR>          ..
+2018-03-30  11:36         7,840,016 test-image
+2018-03-30  19:18            44,888 train-images-idx3-ubyte.gz
+               2 File(s)      7,884,904 bytes
+               2 Dir(s)  44,682,141,696 bytes free
+
+(tensorflow) C:\tutorials\cnn-mnist\mnist_data>del *.gz
+
+(tensorflow) C:\tutorials\cnn-mnist\mnist_data>cd ..
+
+(tensorflow) C:\tutorials\cnn-mnist>python main.py
+input args:
+ {
+    "data_dir":"mnist_data/",
+    "ckpt_dir":"ckpts/",
+    "load_params":false,
+    "output":"prediction.csv",
+    "epochs":30,
+    "batch_size":50,
+    "val_size":5000
+}
+Successfully downloaded train-images-idx3-ubyte.gz 9912422 bytes.
+Extracting mnist_data/train-images-idx3-ubyte.gz
+Successfully downloaded train-labels-idx1-ubyte.gz 28881 bytes.
+Extracting mnist_data/train-labels-idx1-ubyte.gz
+Extracting test-image
+WARNING:tensorflow:From C:\tutorials\cnn-mnist\model.py:56: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+2018-03-30 19:34:11.117947: I C:\tf_jenkins\workspace\rel-win\M\windows\PY\36\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+Starting training
+Traceback (most recent call last):
+  File "main.py", line 128, in <module>
+    train(args, data)
+  File "main.py", line 70, in train
+    _, acc = sess.run([optimizer, model.accuracy], feed_dict=feed_dict)
+  File "C:\Users\mwise\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\site-packages\tensorflow\python\client\session.py", line 895, in run
+  File "C:\Users\mwise\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\site-packages\tensorflow\python\client\session.py", line 1128, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "C:\Users\mwise\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\site-packages\tensorflow\python\client\session.py", line 1344, in _do_run
+    options, run_metadata)
+  File "C:\Users\mwise\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\site-packages\tensorflow\python\client\session.py", line 1350, in _do_call
+    return fn(*args)
+  File "C:\Users\mwise\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\site-packages\tensorflow\python\client\session.py", line 1329, in _run_fn
+    status, run_metadata)
+KeyboardInterrupt
+
+(tensorflow) C:\tutorials\cnn-mnist>python main.py -epochs:1
+usage: main.py [-h] [-d DATA_DIR] [-c CKPT_DIR] [-l] [-o OUTPUT] [-e EPOCHS]
+               [-b BATCH_SIZE] [-v VAL_SIZE]
+main.py: error: argument -e/--epochs: invalid int value: 'pochs:1'
+
+(tensorflow) C:\tutorials\cnn-mnist>python main.py -e 1
+input args:
+ {
+    "data_dir":"mnist_data/",
+    "ckpt_dir":"ckpts/",
+    "load_params":false,
+    "output":"prediction.csv",
+    "epochs":1,
+    "batch_size":50,
+    "val_size":5000
+}
+Extracting mnist_data/train-images-idx3-ubyte.gz
+Extracting mnist_data/train-labels-idx1-ubyte.gz
+Extracting test-image
+WARNING:tensorflow:From C:\tutorials\cnn-mnist\model.py:56: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+2018-03-30 19:36:13.204294: I C:\tf_jenkins\workspace\rel-win\M\windows\PY\36\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+Starting training
+Epoch 0, time = 413s, train accuracy = 0.8702, validation accuracy = 0.9762
+Output prediction: prediction.csv
+
+(tensorflow) C:\tutorials\cnn-mnist>
+(tensorflow) C:\tutorials\cnn-mnist>
+(tensorflow) C:\tutorials\cnn-mnist>
